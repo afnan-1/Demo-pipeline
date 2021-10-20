@@ -1,4 +1,5 @@
 #!/bin/bash
 service httpd start
-source /home/ec2-user/app/env/bin/activate
+sudo su
+source env/bin/activate
 python manage.py runserver 0.0.0.0:8000
