@@ -1,5 +1,9 @@
 #!/bin/bash
 service httpd start
 source env/bin/activate
+<<<<<<< HEAD
 sudo su
 python3 manage.py runserver
+=======
+sudo su
+>>>>>>> 145ccc9 (ok)
