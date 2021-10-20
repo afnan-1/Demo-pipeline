@@ -1,8 +1,4 @@
 #!/bin/bash
 service httpd start
 source env/bin/activate
-<<<<<<< HEAD
 sudo su
-=======
-sudo su
->>>>>>> 145ccc9 (ok)
