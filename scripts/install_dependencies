@@ -3,5 +3,5 @@ yum install -y httpd
 source env/bin/activate
 sudo su
 pip3 install -r /home/ec2-user/app/requirements.txt
-python3 manage.py runserver 0.0.0.0:8000
+
 
