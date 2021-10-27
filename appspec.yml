@@ -2,24 +2,14 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/app/
+    destination: /home/ubuntu/app
 
 hooks:
-  ApplicationStop:
-    - location: scripts/stop_server
-      timeout: 6000
-      runas: ec2-user
-
-  AfterInstall:
+  AfterInstall: 
     - location: scripts/install_dependencies
       timeout: 6000
-      runas: ec2-user
- 
+      runas: ubuntu
   ApplicationStart:
-      - location: scripts/start_server
-        timeout: 6000
-        runas: ec2-user
-
-
-  
-
+    - location: scripts/start_server
+      timeout: 6000
+      runas: ubuntu

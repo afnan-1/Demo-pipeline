@@ -1,5 +1,2 @@
 #!/bin/bash
-source env/bin/activate
-sudo su
-cd /home/ec2-user/app/
-python3 manage.py runserver 0.0.0.0:8000
+sudo supervisorctl restart all

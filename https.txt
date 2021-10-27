@@ -1,0 +1,10 @@
+1 create instance
+2 setup nginx
+3 acm certificate
+4 create application load balancer
+5 add listener http and https
+6 add security group with port 80 443
+7 create target group with port 80 http
+8 set watchout to 300
+9 set listeners rules to http to redirect to https;
+10 https to target group http
